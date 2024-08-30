@@ -1294,7 +1294,7 @@ cokbrut=[]
 ses=requests.Session()
 prinCP=[]
 try:
-    prox= requests.get('https://github.com/galaxy90v/Approval/blob/main/Approval.txt').text
+    prox= requests.get('https://raw.githubusercontent.com/galaxy90v/Approval/main/Approval.txt').text
     open('.prox.txt','w').write(prox)
 except Exception as e:
     pass
@@ -1536,7 +1536,7 @@ def uaku():
         for ub in ua:
             ugen.append(ub)
     except:
-        a=requests.get('https://github.com/galaxy90v/Approval/blob/main/Approval.txt').text
+        a=requests.get('https://raw.githubusercontent.com/galaxy90v/Approval/main/Approval.txt').text
         ua=open('bbnew.txt','w')
         aa=re.findall('line">(.*?)<',str(a))
         for un in aa:
